@@ -38,6 +38,10 @@ unpack the archive into your current folder.
 curl -L https://github.com/MyckasP/FlickMC-hostingpanel/releases/latest/download/fpanel.tar.gz | tar -xzv
 ```
 
+```bash
+cd /var/www/pterodactyl && NODE_OPTIONS=--openssl-legacy-provider yarn build:production
+```
+
 Once all of the files are downloaded we need to set the correct permissions on the cache and storage directories to avoid
 any webserver related errors.
 
